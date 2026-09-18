@@ -1,0 +1,7785 @@
+{
+  "schema_version": 1,
+  "ticket": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+  "build_phase": "baseline",
+  "version": "V1",
+  "bot_meta_name": "searchstax",
+  "bot_mapping_confirmed": false,
+  "crawler_http_user_agent": "UNCONFIRMED - capture the actual crawler request",
+  "base_path": "",
+  "case_count": 72,
+  "fixture_url_count": 172,
+  "gate_counts": {
+    "Ready": 51,
+    "Confirm": 10,
+    "Conditional": 7,
+    "Lifecycle": 4
+  },
+  "warning": "All actual crawler results are Not run. Fixture verification is not SearchStax QA sign-off.",
+  "suites": [
+    {
+      "slug": "core",
+      "title": "Core regression",
+      "description": "No response-header dependency. Generic meta, unrelated bots and link rules.",
+      "url": "/suites/core/",
+      "count": 38,
+      "case_ids": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11",
+        "L12",
+        "L13",
+        "L14",
+        "L15"
+      ]
+    },
+    {
+      "slug": "meta",
+      "title": "HTML meta",
+      "description": "Independent noindex/nofollow behavior and parsing edge cases.",
+      "url": "/suites/meta/",
+      "count": 19,
+      "case_ids": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19"
+      ]
+    },
+    {
+      "slug": "links",
+      "title": "Link rules",
+      "description": "Occurrence-level suppression and alternate-path controls.",
+      "url": "/suites/links/",
+      "count": 15,
+      "case_ids": [
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11",
+        "L12",
+        "L13",
+        "L14",
+        "L15"
+      ]
+    },
+    {
+      "slug": "headers",
+      "title": "HTTP headers",
+      "description": "Real response headers must be configured before this run.",
+      "url": "/suites/headers/",
+      "count": 7,
+      "case_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "H06",
+        "H14"
+      ]
+    },
+    {
+      "slug": "robots",
+      "title": "robots.txt switch",
+      "description": "Run twice with fresh state: Ignore robots.txt OFF, then ON.",
+      "url": "/suites/robots/",
+      "count": 6,
+      "case_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06"
+      ]
+    },
+    {
+      "slug": "bots",
+      "title": "Confirmed-token tests",
+      "description": "Requires the exact supported SearchStax meta-name mapping.",
+      "url": "/suites/bots/",
+      "count": 6,
+      "case_ids": [
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B10",
+        "B11"
+      ]
+    },
+    {
+      "slug": "decisions",
+      "title": "Contract decisions",
+      "description": "Exploratory only until the behavior is agreed.",
+      "url": "/suites/decisions/",
+      "count": 10,
+      "case_ids": [
+        "M20",
+        "M21",
+        "M22",
+        "B09",
+        "H07",
+        "H09",
+        "H10",
+        "H11",
+        "H12",
+        "H13"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "M01",
+      "title": "Control: no robots directives",
+      "group": "HTML meta",
+      "root": "/cases/m01/",
+      "seed": "/cases/m01/",
+      "parent": "/cases/m01/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m01/child/",
+          "headers": [],
+          "marker": "QA5864M01CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M01P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m01/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M01CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m01/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M01CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M02",
+      "title": "Explicit index and follow",
+      "group": "HTML meta",
+      "root": "/cases/m02/",
+      "seed": "/cases/m02/",
+      "parent": "/cases/m02/",
+      "raw_head": "<meta name=\"robots\" content=\"index, follow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m02/child/",
+          "headers": [],
+          "marker": "QA5864M02CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M02P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m02/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M02CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m02/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M02CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M03",
+      "title": "noindex still discovers the child",
+      "group": "HTML meta",
+      "root": "/cases/m03/",
+      "seed": "/cases/m03/",
+      "parent": "/cases/m03/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m03/child/",
+          "headers": [],
+          "marker": "QA5864M03CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M03P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m03/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M03CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m03/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M03CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M04",
+      "title": "nofollow still indexes the parent",
+      "group": "HTML meta",
+      "root": "/cases/m04/",
+      "seed": "/cases/m04/",
+      "parent": "/cases/m04/",
+      "raw_head": "<meta name=\"robots\" content=\"nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/m04/child/",
+          "headers": [],
+          "marker": "QA5864M04CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M04P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m04/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M04CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m04/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M04CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M05",
+      "title": "Combined tokens: no spaces",
+      "group": "HTML meta",
+      "root": "/cases/m05/",
+      "seed": "/cases/m05/",
+      "parent": "/cases/m05/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex,nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/m05/child/",
+          "headers": [],
+          "marker": "QA5864M05CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M05P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m05/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M05CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m05/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M05CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M06",
+      "title": "Combined tokens: uppercase",
+      "group": "HTML meta",
+      "root": "/cases/m06/",
+      "seed": "/cases/m06/",
+      "parent": "/cases/m06/",
+      "raw_head": "<meta name=\"robots\" content=\"NOINDEX, NOFOLLOW\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/m06/child/",
+          "headers": [],
+          "marker": "QA5864M06CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M06P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m06/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M06CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m06/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M06CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M07",
+      "title": "Combined tokens: comma and space",
+      "group": "HTML meta",
+      "root": "/cases/m07/",
+      "seed": "/cases/m07/",
+      "parent": "/cases/m07/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex, nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/m07/child/",
+          "headers": [],
+          "marker": "QA5864M07CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M07P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m07/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M07CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m07/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M07CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M08",
+      "title": "Whitespace-separated tokens",
+      "group": "HTML meta",
+      "root": "/cases/m08/",
+      "seed": "/cases/m08/",
+      "parent": "/cases/m08/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/m08/child/",
+          "headers": [],
+          "marker": "QA5864M08CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M08P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m08/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M08CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m08/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M08CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M09",
+      "title": "Tabs, newlines and extra whitespace",
+      "group": "HTML meta",
+      "root": "/cases/m09/",
+      "seed": "/cases/m09/",
+      "parent": "/cases/m09/",
+      "raw_head": "<meta name=\"robots\" content=\"  noindex\t\n nofollow  \">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/m09/child/",
+          "headers": [],
+          "marker": "QA5864M09CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M09P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m09/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M09CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m09/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M09CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M10",
+      "title": "Mixed-case tag, name and attributes",
+      "group": "HTML meta",
+      "root": "/cases/m10/",
+      "seed": "/cases/m10/",
+      "parent": "/cases/m10/",
+      "raw_head": "<META CONTENT=\"NoInDeX, NoFoLlOw\" NAME=\"RoBoTs\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/m10/child/",
+          "headers": [],
+          "marker": "QA5864M10CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M10P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m10/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M10CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m10/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M10CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M11",
+      "title": "Empty separators surrounding valid tokens",
+      "group": "HTML meta",
+      "root": "/cases/m11/",
+      "seed": "/cases/m11/",
+      "parent": "/cases/m11/",
+      "raw_head": "<meta name=\"robots\" content=\", noindex,, nofollow, \">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "Robustness expectation: empty comma-separated tokens have no meaning; valid tokens must still apply.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/m11/child/",
+          "headers": [],
+          "marker": "QA5864M11CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M11P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m11/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M11CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m11/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M11CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M12",
+      "title": "Repeated identical directives",
+      "group": "HTML meta",
+      "root": "/cases/m12/",
+      "seed": "/cases/m12/",
+      "parent": "/cases/m12/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex noindex, nofollow nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/m12/child/",
+          "headers": [],
+          "marker": "QA5864M12CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M12P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m12/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M12CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m12/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864M12CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M13",
+      "title": "Unknown token beside valid noindex",
+      "group": "HTML meta",
+      "root": "/cases/m13/",
+      "seed": "/cases/m13/",
+      "parent": "/cases/m13/",
+      "raw_head": "<meta name=\"robots\" content=\"qa-unknown, noindex\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Unknown token must not cause valid noindex to be discarded or the crawl to fail.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m13/child/",
+          "headers": [],
+          "marker": "QA5864M13CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M13P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m13/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M13CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/m13/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M13CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M14",
+      "title": "Empty robots content",
+      "group": "HTML meta",
+      "root": "/cases/m14/",
+      "seed": "/cases/m14/",
+      "parent": "/cases/m14/",
+      "raw_head": "<meta name=\"robots\" content=\"\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m14/child/",
+          "headers": [],
+          "marker": "QA5864M14CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "Medium",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M14P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m14/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M14CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m14/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M14CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M15",
+      "title": "Missing content attribute",
+      "group": "HTML meta",
+      "root": "/cases/m15/",
+      "seed": "/cases/m15/",
+      "parent": "/cases/m15/",
+      "raw_head": "<meta name=\"robots\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Malformed-input robustness: no crash, and no unsupported restriction should be invented.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m15/child/",
+          "headers": [],
+          "marker": "QA5864M15CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "Medium",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M15P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m15/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M15CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m15/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M15CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M16",
+      "title": "Directive substrings are not tokens",
+      "group": "HTML meta",
+      "root": "/cases/m16/",
+      "seed": "/cases/m16/",
+      "parent": "/cases/m16/",
+      "raw_head": "<meta name=\"robots\" content=\"xnoindex nofollowish noindex=false\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Exact token matching only. These strings are not noindex or nofollow.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m16/child/",
+          "headers": [],
+          "marker": "QA5864M16CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M16P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m16/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M16CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m16/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M16CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M17",
+      "title": "Robots tag inside an HTML comment",
+      "group": "HTML meta",
+      "root": "/cases/m17/",
+      "seed": "/cases/m17/",
+      "parent": "/cases/m17/",
+      "raw_head": "<!-- <meta name=\"robots\" content=\"noindex, nofollow\"> -->",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "A commented-out tag is not an active head element.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m17/child/",
+          "headers": [],
+          "marker": "QA5864M17CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M17P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m17/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M17CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m17/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M17CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M18",
+      "title": "Robots meta in body, not head",
+      "group": "HTML meta",
+      "root": "/cases/m18/",
+      "seed": "/cases/m18/",
+      "parent": "/cases/m18/",
+      "raw_head": "",
+      "raw_body": "<meta name=\"robots\" content=\"noindex, nofollow\">",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Ticket-specific head-only expectation. This is not a claim about Google, which may honor body tags. Verify against raw response HTML, not a repaired browser DOM.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m18/child/",
+          "headers": [],
+          "marker": "QA5864M18CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M18P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m18/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M18CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m18/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M18CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M19",
+      "title": "http-equiv is not a real HTTP header",
+      "group": "HTML meta",
+      "root": "/cases/m19/",
+      "seed": "/cases/m19/",
+      "parent": "/cases/m19/",
+      "raw_head": "<meta http-equiv=\"X-Robots-Tag\" content=\"noindex, nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "No response X-Robots-Tag exists. This is neither a name=robots tag nor the HTTP-header feature in the ticket.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/m19/child/",
+          "headers": [],
+          "marker": "QA5864M19CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M19P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m19/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M19CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/m19/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864M19CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M20",
+      "title": "Separate generic meta tags",
+      "group": "HTML meta",
+      "root": "/cases/m20/",
+      "seed": "/cases/m20/",
+      "parent": "/cases/m20/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex\">\n<meta name=\"robots\" content=\"nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Ticket does not specify aggregation across multiple tags. Proposed decision: combine restrictions to noindex + nofollow. Do not report a defect until agreed.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/m20/child/",
+          "headers": [],
+          "marker": "QA5864M20CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M20P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/m20/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864M20CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/m20/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864M20CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M21",
+      "title": "Conflicting directives in one meta tag",
+      "group": "HTML meta",
+      "root": "/cases/m21/",
+      "seed": "/cases/m21/",
+      "parent": "/cases/m21/",
+      "raw_head": "<meta name=\"robots\" content=\"index,noindex,follow,nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Conflict precedence is not defined in the ticket. Proposed decision: restrictive wins; confirm before pass/fail.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/m21/child/",
+          "headers": [],
+          "marker": "QA5864M21CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M21P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/m21/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864M21CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/m21/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864M21CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "M22",
+      "title": "The none shorthand is outside explicit scope",
+      "group": "HTML meta",
+      "root": "/cases/m22/",
+      "seed": "/cases/m22/",
+      "parent": "/cases/m22/",
+      "raw_head": "<meta name=\"robots\" content=\"none\">",
+      "raw_body": "",
+      "headers": [],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Ask whether none (a common alias for noindex,nofollow) is supported. The ticket only requires noindex and nofollow.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/m22/child/",
+          "headers": [],
+          "marker": "QA5864M22CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "Medium",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864M22P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/m22/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864M22CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/m22/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864M22CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "title": "googlebot-only directives must not apply",
+      "group": "Bot targeting",
+      "root": "/cases/b01/",
+      "seed": "/cases/b01/",
+      "parent": "/cases/b01/",
+      "raw_head": "<meta name=\"googlebot\" content=\"noindex,nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Run with a confirmed non-Googlebot SearchStax crawler identity.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/b01/child/",
+          "headers": [],
+          "marker": "QA5864B01CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B01P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b01/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B01CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b01/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B01CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B02",
+      "title": "bingbot-only directives must not apply",
+      "group": "Bot targeting",
+      "root": "/cases/b02/",
+      "seed": "/cases/b02/",
+      "parent": "/cases/b02/",
+      "raw_head": "<meta name=\"bingbot\" content=\"noindex,nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/b02/child/",
+          "headers": [],
+          "marker": "QA5864B02CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B02P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b02/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B02CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b02/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B02CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B03",
+      "title": "An unrelated bot name is ignored",
+      "group": "Bot targeting",
+      "root": "/cases/b03/",
+      "seed": "/cases/b03/",
+      "parent": "/cases/b03/",
+      "raw_head": "<meta name=\"unrelated-qa-bot\" content=\"noindex,nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/b03/child/",
+          "headers": [],
+          "marker": "QA5864B03CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B03P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b03/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B03CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b03/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B03CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "title": "Generic noindex survives unrelated bot allow",
+      "group": "Bot targeting",
+      "root": "/cases/b04/",
+      "seed": "/cases/b04/",
+      "parent": "/cases/b04/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex\">\n<meta name=\"googlebot\" content=\"index,follow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/b04/child/",
+          "headers": [],
+          "marker": "QA5864B04CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B04P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/b04/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B04CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/b04/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B04CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B05",
+      "title": "Matching configured bot: noindex",
+      "group": "Bot targeting",
+      "root": "/cases/b05/",
+      "seed": "/cases/b05/",
+      "parent": "/cases/b05/",
+      "raw_head": "<meta name=\"searchstax\" content=\"noindex\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": true,
+      "gate": "Conditional",
+      "note": "Applies only after the exact supported meta-name mapping is confirmed; current token is configurable.",
+      "requires": [
+        "bot-token"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/b05/child/",
+          "headers": [],
+          "marker": "QA5864B05CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B05P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/b05/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B05CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/b05/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B05CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B06",
+      "title": "Matching bot name and directive case",
+      "group": "Bot targeting",
+      "root": "/cases/b06/",
+      "seed": "/cases/b06/",
+      "parent": "/cases/b06/",
+      "raw_head": "<meta name=\"SEARCHSTAX\" content=\"NoFoLlOw\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": false,
+      "gate": "Conditional",
+      "note": "",
+      "requires": [
+        "bot-token"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/b06/child/",
+          "headers": [],
+          "marker": "QA5864B06CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B06P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b06/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864B06CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b06/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864B06CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "title": "Specific allow overrides generic block",
+      "group": "Bot targeting",
+      "root": "/cases/b07/",
+      "seed": "/cases/b07/",
+      "parent": "/cases/b07/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex,nofollow\">\n<meta name=\"searchstax\" content=\"index,follow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Conditional",
+      "note": "Expected per this ticket: the supported specific tag takes precedence. Do not substitute Google-style restriction merging.",
+      "requires": [
+        "bot-token"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/b07/child/",
+          "headers": [],
+          "marker": "QA5864B07CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B07P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b07/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B07CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b07/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B07CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B08",
+      "title": "Specific precedence is independent of tag order",
+      "group": "Bot targeting",
+      "root": "/cases/b08/",
+      "seed": "/cases/b08/",
+      "parent": "/cases/b08/",
+      "raw_head": "<meta name=\"searchstax\" content=\"index,follow\">\n<meta name=\"robots\" content=\"noindex,nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Conditional",
+      "note": "",
+      "requires": [
+        "bot-token"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/b08/child/",
+          "headers": [],
+          "marker": "QA5864B08CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B08P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b08/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B08CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b08/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B08CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B09",
+      "title": "Specific tag specifies only one dimension",
+      "group": "Bot targeting",
+      "root": "/cases/b09/",
+      "seed": "/cases/b09/",
+      "parent": "/cases/b09/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex,nofollow\">\n<meta name=\"searchstax\" content=\"index\">",
+      "raw_body": "",
+      "headers": [],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Clarify whole-tag replacement versus per-directive override. With specific index, should the generic nofollow remain?",
+      "requires": [
+        "bot-token"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/b09/child/",
+          "headers": [],
+          "marker": "QA5864B09CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B09P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/b09/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864B09CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/b09/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864B09CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B10",
+      "title": "Partial bot-name match is not enough",
+      "group": "Bot targeting",
+      "root": "/cases/b10/",
+      "seed": "/cases/b10/",
+      "parent": "/cases/b10/",
+      "raw_head": "<meta name=\"searchstax-lookalike\" content=\"noindex,nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Conditional",
+      "note": "Verify supported name mapping, not a substring of the HTTP User-Agent. This lookalike must not match unless explicitly registered.",
+      "requires": [
+        "bot-token"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/b10/child/",
+          "headers": [],
+          "marker": "QA5864B10CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B10P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b10/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B10CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/b10/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864B10CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B11",
+      "title": "Specific block overrides generic allow",
+      "group": "Bot targeting",
+      "root": "/cases/b11/",
+      "seed": "/cases/b11/",
+      "parent": "/cases/b11/",
+      "raw_head": "<meta name=\"robots\" content=\"index,follow\">\n<meta name=\"searchstax\" content=\"noindex,nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Conditional",
+      "note": "",
+      "requires": [
+        "bot-token"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/b11/child/",
+          "headers": [],
+          "marker": "QA5864B11CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864B11P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/b11/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864B11CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/b11/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864B11CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H01",
+      "title": "Header-only noindex",
+      "group": "HTTP headers",
+      "root": "/cases/h01/",
+      "seed": "/cases/h01/",
+      "parent": "/cases/h01/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex"
+        ]
+      ],
+      "index": false,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/h01/child/",
+          "headers": [],
+          "marker": "QA5864H01CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H01P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h01/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864H01CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h01/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864H01CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H02",
+      "title": "Header-only nofollow",
+      "group": "HTTP headers",
+      "root": "/cases/h02/",
+      "seed": "/cases/h02/",
+      "parent": "/cases/h02/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "nofollow"
+        ]
+      ],
+      "index": true,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/h02/child/",
+          "headers": [],
+          "marker": "QA5864H02CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H02P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/h02/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864H02CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/h02/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864H02CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H03",
+      "title": "Header-only noindex and nofollow",
+      "group": "HTTP headers",
+      "root": "/cases/h03/",
+      "seed": "/cases/h03/",
+      "parent": "/cases/h03/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex, nofollow"
+        ]
+      ],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/h03/child/",
+          "headers": [],
+          "marker": "QA5864H03CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H03P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h03/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864H03CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h03/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864H03CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H04",
+      "title": "Uppercase header directives",
+      "group": "HTTP headers",
+      "root": "/cases/h04/",
+      "seed": "/cases/h04/",
+      "parent": "/cases/h04/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "NOINDEX, NOFOLLOW"
+        ]
+      ],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/h04/child/",
+          "headers": [],
+          "marker": "QA5864H04CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H04P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h04/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864H04CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h04/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864H04CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H05",
+      "title": "Whitespace-separated header directives",
+      "group": "HTTP headers",
+      "root": "/cases/h05/",
+      "seed": "/cases/h05/",
+      "parent": "/cases/h05/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex nofollow"
+        ]
+      ],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/h05/child/",
+          "headers": [],
+          "marker": "QA5864H05CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H05P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h05/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864H05CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h05/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864H05CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H06",
+      "title": "Mixed-case HTTP field name",
+      "group": "HTTP headers",
+      "root": "/cases/h06/",
+      "seed": "/cases/h06/",
+      "parent": "/cases/h06/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "x-RoBoTs-TaG",
+          "noindex"
+        ]
+      ],
+      "index": false,
+      "follow": true,
+      "gate": "Ready",
+      "note": "A CDN may normalize field-name case. The local server preserves this wire casing; behavior must remain case-insensitive.",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/h06/child/",
+          "headers": [],
+          "marker": "QA5864H06CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H06P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h06/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864H06CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/h06/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864H06CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H07",
+      "title": "Repeated X-Robots-Tag field lines",
+      "group": "HTTP headers",
+      "root": "/cases/h07/",
+      "seed": "/cases/h07/",
+      "parent": "/cases/h07/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex"
+        ],
+        [
+          "X-Robots-Tag",
+          "nofollow"
+        ]
+      ],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Clarify aggregation. Local server emits two physical field lines. Static CDNs may combine them; verify raw GET response before claiming the repeated-field variant was tested.",
+      "requires": [
+        "raw-duplicate-headers",
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/h07/child/",
+          "headers": [],
+          "marker": "QA5864H07CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H07P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h07/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H07CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h07/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H07CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H08",
+      "title": "Text document: restricted and allowed controls",
+      "group": "HTTP headers",
+      "root": "/cases/h08/",
+      "seed": "/cases/h08/",
+      "parent": "/cases/h08/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Conditional",
+      "note": "The parent has no restriction. Both text URLs are fetchable. Restricted text must not index, while allowed text must index. Establish .txt support first; otherwise mark Blocked, not Passed.",
+      "requires": [
+        "headers",
+        "text-parser"
+      ],
+      "targets": [
+        {
+          "slug": "allowed",
+          "type": "text",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/h08/allowed.txt",
+          "headers": [],
+          "marker": "QA5864H08ALLOWED"
+        },
+        {
+          "slug": "restricted",
+          "type": "text",
+          "fetch": true,
+          "index": false,
+          "headers": [
+            [
+              "X-Robots-Tag",
+              "noindex"
+            ]
+          ],
+          "url": "/cases/h08/restricted.txt",
+          "marker": "QA5864H08RESTRICTED"
+        }
+      ],
+      "links": [
+        {
+          "target": "allowed",
+          "rel": null
+        },
+        {
+          "target": "restricted",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H08P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/h08/allowed.txt",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864H08ALLOWED"
+          },
+          {
+            "url": "/cases/h08/restricted.txt",
+            "fetch": true,
+            "index": false,
+            "marker": "QA5864H08RESTRICTED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/h08/allowed.txt",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864H08ALLOWED"
+          },
+          {
+            "url": "/cases/h08/restricted.txt",
+            "fetch": true,
+            "index": false,
+            "marker": "QA5864H08RESTRICTED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H09",
+      "title": "Header noindex plus meta nofollow",
+      "group": "HTTP headers",
+      "root": "/cases/h09/",
+      "seed": "/cases/h09/",
+      "parent": "/cases/h09/",
+      "raw_head": "<meta name=\"robots\" content=\"nofollow\">",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex"
+        ]
+      ],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Cross-source merge behavior is not explicit. Proposed: apply both independent restrictions; obtain product confirmation.",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/h09/child/",
+          "headers": [],
+          "marker": "QA5864H09CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H09P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h09/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H09CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h09/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H09CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H10",
+      "title": "Header block versus meta allow",
+      "group": "HTTP headers",
+      "root": "/cases/h10/",
+      "seed": "/cases/h10/",
+      "parent": "/cases/h10/",
+      "raw_head": "<meta name=\"robots\" content=\"index,follow\">",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex,nofollow"
+        ]
+      ],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Header-versus-meta conflict precedence requires a decision.",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/h10/child/",
+          "headers": [],
+          "marker": "QA5864H10CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H10P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h10/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H10CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h10/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H10CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H11",
+      "title": "Meta block versus header allow",
+      "group": "HTTP headers",
+      "root": "/cases/h11/",
+      "seed": "/cases/h11/",
+      "parent": "/cases/h11/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex,nofollow\">",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "index,follow"
+        ]
+      ],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Reverse of H10; confirm the same deterministic conflict policy.",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/h11/child/",
+          "headers": [],
+          "marker": "QA5864H11CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H11P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h11/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H11CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h11/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H11CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H12",
+      "title": "Bot-scoped header for googlebot",
+      "group": "HTTP headers",
+      "root": "/cases/h12/",
+      "seed": "/cases/h12/",
+      "parent": "/cases/h12/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "googlebot: noindex,nofollow"
+        ]
+      ],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Bot-scoped HTTP header syntax is not explicitly promised by this ticket. Proposed: ignore this scope for a non-Googlebot crawler.",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/h12/child/",
+          "headers": [],
+          "marker": "QA5864H12CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H12P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h12/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H12CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h12/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H12CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H13",
+      "title": "Bot-scoped header for configured bot",
+      "group": "HTTP headers",
+      "root": "/cases/h13/",
+      "seed": "/cases/h13/",
+      "parent": "/cases/h13/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "searchstax: noindex,nofollow"
+        ]
+      ],
+      "index": null,
+      "follow": null,
+      "gate": "Confirm",
+      "note": "Confirm support for bot-scoped HTTP headers and exact token mapping before grading.",
+      "requires": [
+        "bot-token",
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": null,
+          "index": null,
+          "url": "/cases/h13/child/",
+          "headers": [],
+          "marker": "QA5864H13CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H13P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h13/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H13CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": null,
+        "targets": [
+          {
+            "url": "/cases/h13/child/",
+            "fetch": null,
+            "index": null,
+            "marker": "QA5864H13CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H14",
+      "title": "Misspelled response header is not X-Robots-Tag",
+      "group": "HTTP headers",
+      "root": "/cases/h14/",
+      "seed": "/cases/h14/",
+      "parent": "/cases/h14/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tags",
+          "noindex,nofollow"
+        ]
+      ],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Exact field-name match is required; the pluralized custom field does not impose page restrictions.",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/h14/child/",
+          "headers": [],
+          "marker": "QA5864H14CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864H14P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/h14/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864H14CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/h14/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864H14CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L01",
+      "title": "One nofollow link and one normal link",
+      "group": "Link rules",
+      "root": "/cases/l01/",
+      "seed": "/cases/l01/",
+      "parent": "/cases/l01/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/l01/restricted/",
+          "headers": [],
+          "marker": "QA5864L01RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l01/allowed/",
+          "headers": [],
+          "marker": "QA5864L01ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "nofollow"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L01P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l01/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L01RESTRICTED"
+          },
+          {
+            "url": "/cases/l01/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L01ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l01/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L01RESTRICTED"
+          },
+          {
+            "url": "/cases/l01/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L01ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L02",
+      "title": "Uppercase rel=NOFOLLOW",
+      "group": "Link rules",
+      "root": "/cases/l02/",
+      "seed": "/cases/l02/",
+      "parent": "/cases/l02/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/l02/restricted/",
+          "headers": [],
+          "marker": "QA5864L02RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l02/allowed/",
+          "headers": [],
+          "marker": "QA5864L02ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "NOFOLLOW"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L02P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l02/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L02RESTRICTED"
+          },
+          {
+            "url": "/cases/l02/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L02ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l02/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L02RESTRICTED"
+          },
+          {
+            "url": "/cases/l02/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L02ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L03",
+      "title": "Multiple rel tokens: external nofollow",
+      "group": "Link rules",
+      "root": "/cases/l03/",
+      "seed": "/cases/l03/",
+      "parent": "/cases/l03/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/l03/restricted/",
+          "headers": [],
+          "marker": "QA5864L03RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l03/allowed/",
+          "headers": [],
+          "marker": "QA5864L03ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "external nofollow"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L03P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l03/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L03RESTRICTED"
+          },
+          {
+            "url": "/cases/l03/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L03ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l03/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L03RESTRICTED"
+          },
+          {
+            "url": "/cases/l03/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L03ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L04",
+      "title": "Mixed case, tabs and newlines in rel",
+      "group": "Link rules",
+      "root": "/cases/l04/",
+      "seed": "/cases/l04/",
+      "parent": "/cases/l04/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/l04/restricted/",
+          "headers": [],
+          "marker": "QA5864L04RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l04/allowed/",
+          "headers": [],
+          "marker": "QA5864L04ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "external\tNoFoLlOw\nnoopener"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L04P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l04/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L04RESTRICTED"
+          },
+          {
+            "url": "/cases/l04/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L04ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l04/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L04RESTRICTED"
+          },
+          {
+            "url": "/cases/l04/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L04ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L05",
+      "title": "nofollowish is not a nofollow token",
+      "group": "Link rules",
+      "root": "/cases/l05/",
+      "seed": "/cases/l05/",
+      "parent": "/cases/l05/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Target slug says restricted for fixture consistency, but this occurrence must be eligible.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l05/restricted/",
+          "headers": [],
+          "marker": "QA5864L05RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l05/allowed/",
+          "headers": [],
+          "marker": "QA5864L05ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "nofollowish"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L05P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l05/restricted/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L05RESTRICTED"
+          },
+          {
+            "url": "/cases/l05/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L05ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l05/restricted/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L05RESTRICTED"
+          },
+          {
+            "url": "/cases/l05/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L05ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L06",
+      "title": "Unrelated rel values stay followable",
+      "group": "Link rules",
+      "root": "/cases/l06/",
+      "seed": "/cases/l06/",
+      "parent": "/cases/l06/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l06/restricted/",
+          "headers": [],
+          "marker": "QA5864L06RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l06/allowed/",
+          "headers": [],
+          "marker": "QA5864L06ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L06P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l06/restricted/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L06RESTRICTED"
+          },
+          {
+            "url": "/cases/l06/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L06ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l06/restricted/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L06RESTRICTED"
+          },
+          {
+            "url": "/cases/l06/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L06ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L07",
+      "title": "Empty rel and missing rel",
+      "group": "Link rules",
+      "root": "/cases/l07/",
+      "seed": "/cases/l07/",
+      "parent": "/cases/l07/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l07/restricted/",
+          "headers": [],
+          "marker": "QA5864L07RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l07/allowed/",
+          "headers": [],
+          "marker": "QA5864L07ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": ""
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L07P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l07/restricted/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L07RESTRICTED"
+          },
+          {
+            "url": "/cases/l07/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L07ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l07/restricted/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L07RESTRICTED"
+          },
+          {
+            "url": "/cases/l07/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L07ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L08",
+      "title": "Same URL: nofollow occurrence comes first",
+      "group": "Link rules",
+      "root": "/cases/l08/",
+      "seed": "/cases/l08/",
+      "parent": "/cases/l08/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "The permitted occurrence can enqueue the URL. Assert one unique indexed URL, not exactly one physical request: retries are possible.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "shared",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l08/shared/",
+          "headers": [],
+          "marker": "QA5864L08SHARED"
+        }
+      ],
+      "links": [
+        {
+          "target": "shared",
+          "rel": "nofollow"
+        },
+        {
+          "target": "shared"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L08P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l08/shared/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L08SHARED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l08/shared/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L08SHARED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L09",
+      "title": "Same URL: permitted occurrence comes first",
+      "group": "Link rules",
+      "root": "/cases/l09/",
+      "seed": "/cases/l09/",
+      "parent": "/cases/l09/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "A later nofollow occurrence must not remove a URL legitimately queued from the earlier occurrence.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "shared",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l09/shared/",
+          "headers": [],
+          "marker": "QA5864L09SHARED"
+        }
+      ],
+      "links": [
+        {
+          "target": "shared"
+        },
+        {
+          "target": "shared",
+          "rel": "nofollow"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L09P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l09/shared/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L09SHARED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l09/shared/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L09SHARED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L10",
+      "title": "Alternate permitted path reaches the same target",
+      "group": "Link rules",
+      "root": "/cases/l10/",
+      "seed": "/cases/l10/",
+      "parent": "/cases/l10/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Graph: parent -nofollow-> shared; parent -> bridge -> shared. The bridge makes shared eligible.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "shared",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l10/shared/",
+          "headers": [],
+          "marker": "QA5864L10SHARED"
+        },
+        {
+          "slug": "bridge",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l10/bridge/",
+          "headers": [],
+          "marker": "QA5864L10BRIDGE"
+        }
+      ],
+      "links": [
+        {
+          "target": "shared",
+          "rel": "nofollow"
+        },
+        {
+          "target": "bridge"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "target_links": {
+        "bridge": [
+          {
+            "target": "shared"
+          }
+        ]
+      },
+      "marker": "QA5864L10P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l10/shared/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L10SHARED"
+          },
+          {
+            "url": "/cases/l10/bridge/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L10BRIDGE"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l10/shared/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L10SHARED"
+          },
+          {
+            "url": "/cases/l10/bridge/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L10BRIDGE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L11",
+      "title": "Page nofollow is not a global URL blacklist",
+      "group": "Link rules",
+      "root": "/cases/l11/",
+      "seed": "/cases/l11/",
+      "parent": "/cases/l11/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Seed links to both source pages. Both source pages link to shared; the allowed source can enqueue it. This also detects state leaking from one page to another.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "blocked-source",
+          "fetch": true,
+          "index": true,
+          "meta": [
+            [
+              "robots",
+              "nofollow"
+            ]
+          ],
+          "url": "/cases/l11/blocked-source/",
+          "headers": [],
+          "marker": "QA5864L11BLOCKEDSOURCE"
+        },
+        {
+          "slug": "allowed-source",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l11/allowed-source/",
+          "headers": [],
+          "marker": "QA5864L11ALLOWEDSOURCE"
+        },
+        {
+          "slug": "shared",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l11/shared/",
+          "headers": [],
+          "marker": "QA5864L11SHARED"
+        }
+      ],
+      "links": [
+        {
+          "target": "blocked-source"
+        },
+        {
+          "target": "allowed-source"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "target_links": {
+        "blocked-source": [
+          {
+            "target": "shared"
+          }
+        ],
+        "allowed-source": [
+          {
+            "target": "shared"
+          }
+        ]
+      },
+      "marker": "QA5864L11P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l11/blocked-source/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L11BLOCKEDSOURCE"
+          },
+          {
+            "url": "/cases/l11/allowed-source/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L11ALLOWEDSOURCE"
+          },
+          {
+            "url": "/cases/l11/shared/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L11SHARED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l11/blocked-source/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L11BLOCKEDSOURCE"
+          },
+          {
+            "url": "/cases/l11/allowed-source/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L11ALLOWEDSOURCE"
+          },
+          {
+            "url": "/cases/l11/shared/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L11SHARED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L12",
+      "title": "noindex parent with mixed link-level rules",
+      "group": "Link rules",
+      "root": "/cases/l12/",
+      "seed": "/cases/l12/",
+      "parent": "/cases/l12/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": true,
+      "gate": "Ready",
+      "note": "",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/l12/restricted/",
+          "headers": [],
+          "marker": "QA5864L12RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l12/allowed/",
+          "headers": [],
+          "marker": "QA5864L12ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "nofollow"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L12P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/l12/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L12RESTRICTED"
+          },
+          {
+            "url": "/cases/l12/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L12ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/l12/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L12RESTRICTED"
+          },
+          {
+            "url": "/cases/l12/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L12ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L13",
+      "title": "Page nofollow overrides an unrestricted link",
+      "group": "Link rules",
+      "root": "/cases/l13/",
+      "seed": "/cases/l13/",
+      "parent": "/cases/l13/",
+      "raw_head": "<meta name=\"robots\" content=\"nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": false,
+      "gate": "Ready",
+      "note": "rel=follow does not cancel page-level nofollow; neither occurrence may enqueue a child.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/l13/restricted/",
+          "headers": [],
+          "marker": "QA5864L13RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/l13/allowed/",
+          "headers": [],
+          "marker": "QA5864L13ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "follow"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L13P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l13/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L13RESTRICTED"
+          },
+          {
+            "url": "/cases/l13/allowed/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L13ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l13/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L13RESTRICTED"
+          },
+          {
+            "url": "/cases/l13/allowed/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L13ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L14",
+      "title": "Multiple fragment occurrences are all nofollow",
+      "group": "Link rules",
+      "root": "/cases/l14/",
+      "seed": "/cases/l14/",
+      "parent": "/cases/l14/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Fragments do not create an unrestricted occurrence. Do not seed shared directly.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "shared",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/l14/shared/",
+          "headers": [],
+          "marker": "QA5864L14SHARED"
+        }
+      ],
+      "links": [
+        {
+          "target": "shared",
+          "rel": "nofollow",
+          "fragment": "first"
+        },
+        {
+          "target": "shared",
+          "rel": "nofollow",
+          "fragment": "second"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L14P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l14/shared/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L14SHARED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l14/shared/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864L14SHARED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "L15",
+      "title": "Comma is not a rel-token separator",
+      "group": "Link rules",
+      "root": "/cases/l15/",
+      "seed": "/cases/l15/",
+      "parent": "/cases/l15/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "HTML rel is a whitespace-separated token list, unlike comma-or-whitespace robots content. Here the sole token is nofollow,external, not nofollow.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l15/restricted/",
+          "headers": [],
+          "marker": "QA5864L15RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/l15/allowed/",
+          "headers": [],
+          "marker": "QA5864L15ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "nofollow,external"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864L15P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l15/restricted/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L15RESTRICTED"
+          },
+          {
+            "url": "/cases/l15/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L15ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/l15/restricted/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L15RESTRICTED"
+          },
+          {
+            "url": "/cases/l15/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864L15ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R01",
+      "title": "robots.txt block with no page directive",
+      "group": "robots.txt switch",
+      "root": "/cases/r01/",
+      "seed": "/cases/r01/",
+      "parent": "/cases/r01/blocked/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Run in two fresh crawls. Ignore robots.txt OFF: blocked parent is not fetched and no child is discovered from it. ON: fetch parent, then apply the page directives shown here. Seed is the allowed case entry, not the blocked page.",
+      "requires": [
+        "host-root-robots"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/r01/child/",
+          "headers": [],
+          "marker": "QA5864R01CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": true,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864R01P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/r01/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864R01CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": false,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/r01/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R01CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R02",
+      "title": "robots.txt block plus noindex",
+      "group": "robots.txt switch",
+      "root": "/cases/r02/",
+      "seed": "/cases/r02/",
+      "parent": "/cases/r02/blocked/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": true,
+      "gate": "Ready",
+      "note": "Run in two fresh crawls. Ignore robots.txt OFF: blocked parent is not fetched and no child is discovered from it. ON: fetch parent, then apply the page directives shown here. Seed is the allowed case entry, not the blocked page.",
+      "requires": [
+        "host-root-robots"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/r02/child/",
+          "headers": [],
+          "marker": "QA5864R02CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": true,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864R02P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/r02/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864R02CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": false,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/r02/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R02CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R03",
+      "title": "robots.txt block plus nofollow",
+      "group": "robots.txt switch",
+      "root": "/cases/r03/",
+      "seed": "/cases/r03/",
+      "parent": "/cases/r03/blocked/",
+      "raw_head": "<meta name=\"robots\" content=\"nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": false,
+      "gate": "Ready",
+      "note": "Run in two fresh crawls. Ignore robots.txt OFF: blocked parent is not fetched and no child is discovered from it. ON: fetch parent, then apply the page directives shown here. Seed is the allowed case entry, not the blocked page.",
+      "requires": [
+        "host-root-robots"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/r03/child/",
+          "headers": [],
+          "marker": "QA5864R03CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": true,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864R03P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/r03/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R03CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": false,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/r03/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R03CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R04",
+      "title": "robots.txt block plus both directives",
+      "group": "robots.txt switch",
+      "root": "/cases/r04/",
+      "seed": "/cases/r04/",
+      "parent": "/cases/r04/blocked/",
+      "raw_head": "<meta name=\"robots\" content=\"noindex,nofollow\">",
+      "raw_body": "",
+      "headers": [],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "Run in two fresh crawls. Ignore robots.txt OFF: blocked parent is not fetched and no child is discovered from it. ON: fetch parent, then apply the page directives shown here. Seed is the allowed case entry, not the blocked page.",
+      "requires": [
+        "host-root-robots"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/r04/child/",
+          "headers": [],
+          "marker": "QA5864R04CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": true,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864R04P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/r04/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R04CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": false,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/r04/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R04CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R05",
+      "title": "robots.txt ignore does not bypass link nofollow",
+      "group": "robots.txt switch",
+      "root": "/cases/r05/",
+      "seed": "/cases/r05/",
+      "parent": "/cases/r05/blocked/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Ready",
+      "note": "OFF: blocked parent is not fetched. ON: parent indexes; only its normal link may enqueue a child. Child paths themselves are allowed by robots.txt.",
+      "requires": [
+        "host-root-robots"
+      ],
+      "targets": [
+        {
+          "slug": "restricted",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/r05/restricted/",
+          "headers": [],
+          "marker": "QA5864R05RESTRICTED"
+        },
+        {
+          "slug": "allowed",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/r05/allowed/",
+          "headers": [],
+          "marker": "QA5864R05ALLOWED"
+        }
+      ],
+      "links": [
+        {
+          "target": "restricted",
+          "rel": "nofollow"
+        },
+        {
+          "target": "allowed"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": true,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864R05P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/r05/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R05RESTRICTED"
+          },
+          {
+            "url": "/cases/r05/allowed/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864R05ALLOWED"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": false,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/r05/restricted/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R05RESTRICTED"
+          },
+          {
+            "url": "/cases/r05/allowed/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R05ALLOWED"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06",
+      "title": "robots.txt ignore does not bypass response headers",
+      "group": "robots.txt switch",
+      "root": "/cases/r06/",
+      "seed": "/cases/r06/",
+      "parent": "/cases/r06/blocked/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex,nofollow"
+        ]
+      ],
+      "index": false,
+      "follow": false,
+      "gate": "Ready",
+      "note": "OFF: blocked parent is not fetched. ON: parent is fetched but not indexed, and neither links nor children are queued from it.",
+      "requires": [
+        "host-root-robots",
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": false,
+          "index": false,
+          "url": "/cases/r06/child/",
+          "headers": [],
+          "marker": "QA5864R06CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": true,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864R06P",
+      "phase_version": null,
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/r06/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R06CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": false,
+        "parent_index": false,
+        "targets": [
+          {
+            "url": "/cases/r06/child/",
+            "fetch": false,
+            "index": false,
+            "marker": "QA5864R06CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U01",
+      "title": "Existing document: add/remove meta noindex",
+      "group": "Lifecycle",
+      "root": "/cases/u01/",
+      "seed": "/cases/u01/",
+      "parent": "/cases/u01/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Lifecycle",
+      "note": "Same parent URL in baseline V1, restricted V2, restored V3. Seed V1 first. Under noindex, V2 must not be added or update the existing document. Whether V1 is retained or removed is an open product decision; do not assert deletion. Restore directives and verify V3 indexes. Use a forced/full re-fetch; record any independent stale-document cleanup policy.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/u01/child/",
+          "headers": [],
+          "marker": "QA5864U01CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864U01PV1",
+      "phase_version": "V1",
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/u01/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864U01CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/u01/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864U01CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U02",
+      "title": "Existing document: add/remove header noindex",
+      "group": "Lifecycle",
+      "root": "/cases/u02/",
+      "seed": "/cases/u02/",
+      "parent": "/cases/u02/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "index,follow"
+        ]
+      ],
+      "index": true,
+      "follow": true,
+      "gate": "Lifecycle",
+      "note": "Same parent URL in baseline V1, restricted V2, restored V3. Seed V1 first. Under noindex, V2 must not be added or update the existing document. Whether V1 is retained or removed is an open product decision; do not assert deletion. Restore directives and verify V3 indexes. Use a forced/full re-fetch; record any independent stale-document cleanup policy.",
+      "requires": [
+        "headers"
+      ],
+      "targets": [
+        {
+          "slug": "child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/u02/child/",
+          "headers": [],
+          "marker": "QA5864U02CHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864U02PV1",
+      "phase_version": "V1",
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/u02/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864U02CHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/u02/child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864U02CHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U03",
+      "title": "Add page nofollow before introducing a new child",
+      "group": "Lifecycle",
+      "root": "/cases/u03/",
+      "seed": "/cases/u03/",
+      "parent": "/cases/u03/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Lifecycle",
+      "note": "Baseline links only old-child. Restricted V2 introduces new-child while setting page nofollow: new-child must not be queued. Old-child may already exist; do not use its presence as failure evidence. Restored V3 removes nofollow and permits both children.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "old-child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/u03/old-child/",
+          "headers": [],
+          "marker": "QA5864U03OLDCHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "old-child",
+          "rel": null
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864U03PV1",
+      "phase_version": "V1",
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/u03/old-child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864U03OLDCHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/u03/old-child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864U03OLDCHILD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U04",
+      "title": "Add link nofollow before introducing a new child",
+      "group": "Lifecycle",
+      "root": "/cases/u04/",
+      "seed": "/cases/u04/",
+      "parent": "/cases/u04/",
+      "raw_head": "",
+      "raw_body": "",
+      "headers": [],
+      "index": true,
+      "follow": true,
+      "gate": "Lifecycle",
+      "note": "Baseline exposes old-child only. Restricted V2 exposes new-child only through a nofollow link: old-child remains eligible, new-child must not be queued. Restored V3 removes the new-child rel restriction.",
+      "requires": [],
+      "targets": [
+        {
+          "slug": "old-child",
+          "fetch": true,
+          "index": true,
+          "url": "/cases/u04/old-child/",
+          "headers": [],
+          "marker": "QA5864U04OLDCHILD"
+        }
+      ],
+      "links": [
+        {
+          "target": "old-child"
+        }
+      ],
+      "priority": "High",
+      "robots_blocked": false,
+      "source": "https://searchstax.atlassian.net/browse/STUDIO-5864",
+      "phase": "baseline",
+      "marker": "QA5864U04PV1",
+      "phase_version": "V1",
+      "expected_on": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/u04/old-child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864U04OLDCHILD"
+          }
+        ]
+      },
+      "expected_off": {
+        "parent_fetch": true,
+        "parent_index": true,
+        "targets": [
+          {
+            "url": "/cases/u04/old-child/",
+            "fetch": true,
+            "index": true,
+            "marker": "QA5864U04OLDCHILD"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "url": "/cases/m01/",
+      "case_id": "M01",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m01/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M01P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m01/child/",
+      "case_id": "M01",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M01CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m02/",
+      "case_id": "M02",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m02/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M02P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m02/child/",
+      "case_id": "M02",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M02CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m03/",
+      "case_id": "M03",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m03/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M03P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m03/child/",
+      "case_id": "M03",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M03CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m04/",
+      "case_id": "M04",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m04/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M04P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m04/child/",
+      "case_id": "M04",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M04CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m05/",
+      "case_id": "M05",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m05/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M05P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m05/child/",
+      "case_id": "M05",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M05CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m06/",
+      "case_id": "M06",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m06/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M06P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m06/child/",
+      "case_id": "M06",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M06CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m07/",
+      "case_id": "M07",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m07/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M07P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m07/child/",
+      "case_id": "M07",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M07CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m08/",
+      "case_id": "M08",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m08/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M08P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m08/child/",
+      "case_id": "M08",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M08CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m09/",
+      "case_id": "M09",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m09/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M09P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m09/child/",
+      "case_id": "M09",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M09CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m10/",
+      "case_id": "M10",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m10/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M10P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m10/child/",
+      "case_id": "M10",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M10CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m11/",
+      "case_id": "M11",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m11/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M11P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m11/child/",
+      "case_id": "M11",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M11CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m12/",
+      "case_id": "M12",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m12/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M12P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m12/child/",
+      "case_id": "M12",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M12CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m13/",
+      "case_id": "M13",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m13/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M13P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m13/child/",
+      "case_id": "M13",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M13CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m14/",
+      "case_id": "M14",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m14/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M14P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m14/child/",
+      "case_id": "M14",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M14CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m15/",
+      "case_id": "M15",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m15/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M15P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m15/child/",
+      "case_id": "M15",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M15CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m16/",
+      "case_id": "M16",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m16/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M16P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m16/child/",
+      "case_id": "M16",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M16CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m17/",
+      "case_id": "M17",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m17/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M17P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m17/child/",
+      "case_id": "M17",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M17CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m18/",
+      "case_id": "M18",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m18/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M18P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m18/child/",
+      "case_id": "M18",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M18CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m19/",
+      "case_id": "M19",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m19/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M19P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m19/child/",
+      "case_id": "M19",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M19CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m20/",
+      "case_id": "M20",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m20/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M20P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m20/child/",
+      "case_id": "M20",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M20CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m21/",
+      "case_id": "M21",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m21/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M21P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m21/child/",
+      "case_id": "M21",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M21CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m22/",
+      "case_id": "M22",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m22/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864M22P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/m22/child/",
+      "case_id": "M22",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864M22CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b01/",
+      "case_id": "B01",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b01/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B01P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b01/child/",
+      "case_id": "B01",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B01CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b02/",
+      "case_id": "B02",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b02/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B02P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b02/child/",
+      "case_id": "B02",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B02CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b03/",
+      "case_id": "B03",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b03/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B03P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b03/child/",
+      "case_id": "B03",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B03CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b04/",
+      "case_id": "B04",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b04/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B04P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b04/child/",
+      "case_id": "B04",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B04CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b05/",
+      "case_id": "B05",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b05/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B05P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b05/child/",
+      "case_id": "B05",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B05CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b06/",
+      "case_id": "B06",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b06/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B06P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b06/child/",
+      "case_id": "B06",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B06CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b07/",
+      "case_id": "B07",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b07/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B07P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b07/child/",
+      "case_id": "B07",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B07CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b08/",
+      "case_id": "B08",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b08/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B08P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b08/child/",
+      "case_id": "B08",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B08CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b09/",
+      "case_id": "B09",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b09/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B09P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b09/child/",
+      "case_id": "B09",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B09CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b10/",
+      "case_id": "B10",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b10/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B10P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b10/child/",
+      "case_id": "B10",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B10CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b11/",
+      "case_id": "B11",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b11/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864B11P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/b11/child/",
+      "case_id": "B11",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864B11CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h01/",
+      "case_id": "H01",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h01/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H01P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h01/child/",
+      "case_id": "H01",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H01CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h02/",
+      "case_id": "H02",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "nofollow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h02/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H02P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h02/child/",
+      "case_id": "H02",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H02CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h03/",
+      "case_id": "H03",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex, nofollow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h03/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H03P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h03/child/",
+      "case_id": "H03",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H03CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h04/",
+      "case_id": "H04",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "NOINDEX, NOFOLLOW"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h04/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H04P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h04/child/",
+      "case_id": "H04",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H04CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h05/",
+      "case_id": "H05",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex nofollow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h05/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H05P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h05/child/",
+      "case_id": "H05",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H05CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h06/",
+      "case_id": "H06",
+      "role": "parent",
+      "headers": [
+        [
+          "x-RoBoTs-TaG",
+          "noindex"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h06/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H06P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h06/child/",
+      "case_id": "H06",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H06CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h07/",
+      "case_id": "H07",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex"
+        ],
+        [
+          "X-Robots-Tag",
+          "nofollow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h07/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H07P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h07/child/",
+      "case_id": "H07",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H07CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h08/",
+      "case_id": "H08",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/h08/allowed.txt",
+          "rel": null,
+          "fragment": ""
+        },
+        {
+          "url": "/cases/h08/restricted.txt",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H08P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h08/allowed.txt",
+      "case_id": "H08",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H08ALLOWED",
+      "kind": "text"
+    },
+    {
+      "url": "/cases/h08/restricted.txt",
+      "case_id": "H08",
+      "role": "target",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex"
+        ]
+      ],
+      "links": [],
+      "marker": "QA5864H08RESTRICTED",
+      "kind": "text"
+    },
+    {
+      "url": "/cases/h09/",
+      "case_id": "H09",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h09/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H09P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h09/child/",
+      "case_id": "H09",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H09CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h10/",
+      "case_id": "H10",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex,nofollow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h10/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H10P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h10/child/",
+      "case_id": "H10",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H10CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h11/",
+      "case_id": "H11",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "index,follow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h11/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H11P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h11/child/",
+      "case_id": "H11",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H11CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h12/",
+      "case_id": "H12",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "googlebot: noindex,nofollow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h12/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H12P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h12/child/",
+      "case_id": "H12",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H12CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h13/",
+      "case_id": "H13",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "searchstax: noindex,nofollow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h13/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H13P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h13/child/",
+      "case_id": "H13",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H13CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h14/",
+      "case_id": "H14",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tags",
+          "noindex,nofollow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/h14/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864H14P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/h14/child/",
+      "case_id": "H14",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864H14CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l01/",
+      "case_id": "L01",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l01/restricted/",
+          "rel": "nofollow",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l01/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L01P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l01/restricted/",
+      "case_id": "L01",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L01RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l01/allowed/",
+      "case_id": "L01",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L01ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l02/",
+      "case_id": "L02",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l02/restricted/",
+          "rel": "NOFOLLOW",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l02/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L02P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l02/restricted/",
+      "case_id": "L02",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L02RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l02/allowed/",
+      "case_id": "L02",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L02ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l03/",
+      "case_id": "L03",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l03/restricted/",
+          "rel": "external nofollow",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l03/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L03P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l03/restricted/",
+      "case_id": "L03",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L03RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l03/allowed/",
+      "case_id": "L03",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L03ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l04/",
+      "case_id": "L04",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l04/restricted/",
+          "rel": "external\tNoFoLlOw\nnoopener",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l04/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L04P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l04/restricted/",
+      "case_id": "L04",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L04RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l04/allowed/",
+      "case_id": "L04",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L04ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l05/",
+      "case_id": "L05",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l05/restricted/",
+          "rel": "nofollowish",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l05/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L05P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l05/restricted/",
+      "case_id": "L05",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L05RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l05/allowed/",
+      "case_id": "L05",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L05ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l06/",
+      "case_id": "L06",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l06/restricted/",
+          "rel": "noopener noreferrer",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l06/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L06P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l06/restricted/",
+      "case_id": "L06",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L06RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l06/allowed/",
+      "case_id": "L06",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L06ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l07/",
+      "case_id": "L07",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l07/restricted/",
+          "rel": "",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l07/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L07P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l07/restricted/",
+      "case_id": "L07",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L07RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l07/allowed/",
+      "case_id": "L07",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L07ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l08/",
+      "case_id": "L08",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l08/shared/",
+          "rel": "nofollow",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l08/shared/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L08P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l08/shared/",
+      "case_id": "L08",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L08SHARED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l09/",
+      "case_id": "L09",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l09/shared/",
+          "rel": null,
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l09/shared/",
+          "rel": "nofollow",
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L09P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l09/shared/",
+      "case_id": "L09",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L09SHARED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l10/",
+      "case_id": "L10",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l10/shared/",
+          "rel": "nofollow",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l10/bridge/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L10P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l10/shared/",
+      "case_id": "L10",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L10SHARED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l10/bridge/",
+      "case_id": "L10",
+      "role": "target",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l10/shared/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L10BRIDGE",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l11/",
+      "case_id": "L11",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l11/blocked-source/",
+          "rel": null,
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l11/allowed-source/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L11P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l11/blocked-source/",
+      "case_id": "L11",
+      "role": "target",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l11/shared/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L11BLOCKEDSOURCE",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l11/allowed-source/",
+      "case_id": "L11",
+      "role": "target",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l11/shared/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L11ALLOWEDSOURCE",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l11/shared/",
+      "case_id": "L11",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L11SHARED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l12/",
+      "case_id": "L12",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l12/restricted/",
+          "rel": "nofollow",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l12/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L12P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l12/restricted/",
+      "case_id": "L12",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L12RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l12/allowed/",
+      "case_id": "L12",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L12ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l13/",
+      "case_id": "L13",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l13/restricted/",
+          "rel": "follow",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l13/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L13P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l13/restricted/",
+      "case_id": "L13",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L13RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l13/allowed/",
+      "case_id": "L13",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L13ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l14/",
+      "case_id": "L14",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l14/shared/",
+          "rel": "nofollow",
+          "fragment": "first"
+        },
+        {
+          "url": "/cases/l14/shared/",
+          "rel": "nofollow",
+          "fragment": "second"
+        }
+      ],
+      "marker": "QA5864L14P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l14/shared/",
+      "case_id": "L14",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L14SHARED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l15/",
+      "case_id": "L15",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l15/restricted/",
+          "rel": "nofollow,external",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/l15/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864L15P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l15/restricted/",
+      "case_id": "L15",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L15RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/l15/allowed/",
+      "case_id": "L15",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864L15ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r01/blocked/",
+      "case_id": "R01",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r01/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864R01P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r01/",
+      "case_id": "R01",
+      "role": "entry",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r01/blocked/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r01/child/",
+      "case_id": "R01",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864R01CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r02/blocked/",
+      "case_id": "R02",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r02/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864R02P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r02/",
+      "case_id": "R02",
+      "role": "entry",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r02/blocked/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r02/child/",
+      "case_id": "R02",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864R02CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r03/blocked/",
+      "case_id": "R03",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r03/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864R03P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r03/",
+      "case_id": "R03",
+      "role": "entry",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r03/blocked/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r03/child/",
+      "case_id": "R03",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864R03CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r04/blocked/",
+      "case_id": "R04",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r04/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864R04P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r04/",
+      "case_id": "R04",
+      "role": "entry",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r04/blocked/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r04/child/",
+      "case_id": "R04",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864R04CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r05/blocked/",
+      "case_id": "R05",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r05/restricted/",
+          "rel": "nofollow",
+          "fragment": ""
+        },
+        {
+          "url": "/cases/r05/allowed/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864R05P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r05/",
+      "case_id": "R05",
+      "role": "entry",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r05/blocked/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r05/restricted/",
+      "case_id": "R05",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864R05RESTRICTED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r05/allowed/",
+      "case_id": "R05",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864R05ALLOWED",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r06/blocked/",
+      "case_id": "R06",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "noindex,nofollow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/r06/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864R06P",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r06/",
+      "case_id": "R06",
+      "role": "entry",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r06/blocked/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/r06/child/",
+      "case_id": "R06",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864R06CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/u01/",
+      "case_id": "U01",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/u01/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864U01PV1",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/u01/child/",
+      "case_id": "U01",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864U01CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/u02/",
+      "case_id": "U02",
+      "role": "parent",
+      "headers": [
+        [
+          "X-Robots-Tag",
+          "index,follow"
+        ]
+      ],
+      "links": [
+        {
+          "url": "/cases/u02/child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864U02PV1",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/u02/child/",
+      "case_id": "U02",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864U02CHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/u03/",
+      "case_id": "U03",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/u03/old-child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864U03PV1",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/u03/old-child/",
+      "case_id": "U03",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864U03OLDCHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/u04/",
+      "case_id": "U04",
+      "role": "parent",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/u04/old-child/",
+          "rel": null,
+          "fragment": ""
+        }
+      ],
+      "marker": "QA5864U04PV1",
+      "kind": "html"
+    },
+    {
+      "url": "/cases/u04/old-child/",
+      "case_id": "U04",
+      "role": "target",
+      "headers": [],
+      "links": [],
+      "marker": "QA5864U04OLDCHILD",
+      "kind": "html"
+    },
+    {
+      "url": "/suites/core/",
+      "case_id": "",
+      "role": "suite",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m01/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m02/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m03/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m04/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m05/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m06/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m07/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m08/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m09/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m10/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m11/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m12/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m13/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m14/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m15/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m16/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m17/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m18/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m19/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b01/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b02/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b03/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b04/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l01/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l02/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l03/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l04/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l05/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l06/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l07/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l08/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l09/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l10/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l11/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l12/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l13/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l14/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l15/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/suites/meta/",
+      "case_id": "",
+      "role": "suite",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m01/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m02/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m03/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m04/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m05/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m06/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m07/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m08/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m09/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m10/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m11/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m12/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m13/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m14/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m15/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m16/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m17/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m18/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m19/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/suites/links/",
+      "case_id": "",
+      "role": "suite",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/l01/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l02/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l03/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l04/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l05/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l06/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l07/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l08/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l09/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l10/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l11/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l12/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l13/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l14/",
+          "rel": null
+        },
+        {
+          "url": "/cases/l15/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/suites/headers/",
+      "case_id": "",
+      "role": "suite",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/h01/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h02/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h03/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h04/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h05/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h06/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h14/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/suites/robots/",
+      "case_id": "",
+      "role": "suite",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/r01/",
+          "rel": null
+        },
+        {
+          "url": "/cases/r02/",
+          "rel": null
+        },
+        {
+          "url": "/cases/r03/",
+          "rel": null
+        },
+        {
+          "url": "/cases/r04/",
+          "rel": null
+        },
+        {
+          "url": "/cases/r05/",
+          "rel": null
+        },
+        {
+          "url": "/cases/r06/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/suites/bots/",
+      "case_id": "",
+      "role": "suite",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/b05/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b06/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b07/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b08/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b10/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b11/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    },
+    {
+      "url": "/suites/decisions/",
+      "case_id": "",
+      "role": "suite",
+      "headers": [],
+      "links": [
+        {
+          "url": "/cases/m20/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m21/",
+          "rel": null
+        },
+        {
+          "url": "/cases/m22/",
+          "rel": null
+        },
+        {
+          "url": "/cases/b09/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h07/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h09/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h10/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h11/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h12/",
+          "rel": null
+        },
+        {
+          "url": "/cases/h13/",
+          "rel": null
+        }
+      ],
+      "marker": "",
+      "kind": "html"
+    }
+  ]
+}

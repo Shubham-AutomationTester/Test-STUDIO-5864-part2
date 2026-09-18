@@ -1,0 +1,1607 @@
+{
+  "scope": "FIXTURE VERIFICATION ONLY - no SearchStax crawler results",
+  "created_at": "2026-09-18T21:27:25.088300+00:00",
+  "phase": "baseline",
+  "profile": "full",
+  "user_agent": "STUDIO5864FixtureVerifier/1.0",
+  "base_url": "http://127.0.0.1:8765",
+  "structural_audit": {
+    "kind": "Structural graph audit, not crawler execution",
+    "checked_urls": 172,
+    "unique_markers": 159,
+    "failures": []
+  },
+  "checks": [
+    {
+      "path": "/cases/m01/",
+      "case_id": "M01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m01/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m01/child/",
+      "case_id": "M01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m01/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m02/",
+      "case_id": "M02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m02/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m02/child/",
+      "case_id": "M02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m02/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m03/",
+      "case_id": "M03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m03/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m03/child/",
+      "case_id": "M03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m03/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m04/",
+      "case_id": "M04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m04/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m04/child/",
+      "case_id": "M04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m04/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m05/",
+      "case_id": "M05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m05/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m05/child/",
+      "case_id": "M05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m05/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m06/",
+      "case_id": "M06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m06/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m06/child/",
+      "case_id": "M06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m06/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m07/",
+      "case_id": "M07",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m07/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m07/child/",
+      "case_id": "M07",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m07/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m08/",
+      "case_id": "M08",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m08/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m08/child/",
+      "case_id": "M08",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m08/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m09/",
+      "case_id": "M09",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m09/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m09/child/",
+      "case_id": "M09",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m09/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m10/",
+      "case_id": "M10",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m10/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m10/child/",
+      "case_id": "M10",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m10/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m11/",
+      "case_id": "M11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m11/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m11/child/",
+      "case_id": "M11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m11/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m12/",
+      "case_id": "M12",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m12/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m12/child/",
+      "case_id": "M12",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m12/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m13/",
+      "case_id": "M13",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m13/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m13/child/",
+      "case_id": "M13",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m13/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m14/",
+      "case_id": "M14",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m14/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m14/child/",
+      "case_id": "M14",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m14/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m15/",
+      "case_id": "M15",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m15/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m15/child/",
+      "case_id": "M15",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m15/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m16/",
+      "case_id": "M16",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m16/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m16/child/",
+      "case_id": "M16",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m16/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m17/",
+      "case_id": "M17",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m17/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m17/child/",
+      "case_id": "M17",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m17/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m18/",
+      "case_id": "M18",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m18/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m18/child/",
+      "case_id": "M18",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m18/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m19/",
+      "case_id": "M19",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m19/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m19/child/",
+      "case_id": "M19",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m19/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m20/",
+      "case_id": "M20",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m20/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m20/child/",
+      "case_id": "M20",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m20/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m21/",
+      "case_id": "M21",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m21/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m21/child/",
+      "case_id": "M21",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m21/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m22/",
+      "case_id": "M22",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m22/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/m22/child/",
+      "case_id": "M22",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/m22/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b01/",
+      "case_id": "B01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b01/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b01/child/",
+      "case_id": "B01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b01/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b02/",
+      "case_id": "B02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b02/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b02/child/",
+      "case_id": "B02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b02/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b03/",
+      "case_id": "B03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b03/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b03/child/",
+      "case_id": "B03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b03/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b04/",
+      "case_id": "B04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b04/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b04/child/",
+      "case_id": "B04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b04/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b05/",
+      "case_id": "B05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b05/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b05/child/",
+      "case_id": "B05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b05/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b06/",
+      "case_id": "B06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b06/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b06/child/",
+      "case_id": "B06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b06/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b07/",
+      "case_id": "B07",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b07/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b07/child/",
+      "case_id": "B07",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b07/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b08/",
+      "case_id": "B08",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b08/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b08/child/",
+      "case_id": "B08",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b08/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b09/",
+      "case_id": "B09",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b09/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b09/child/",
+      "case_id": "B09",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b09/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b10/",
+      "case_id": "B10",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b10/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b10/child/",
+      "case_id": "B10",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b10/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b11/",
+      "case_id": "B11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b11/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/b11/child/",
+      "case_id": "B11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/b11/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h01/",
+      "case_id": "H01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h01/",
+      "actual_x_robots_tag": [
+        "noindex"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h01/child/",
+      "case_id": "H01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h01/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h02/",
+      "case_id": "H02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h02/",
+      "actual_x_robots_tag": [
+        "nofollow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h02/child/",
+      "case_id": "H02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h02/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h03/",
+      "case_id": "H03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h03/",
+      "actual_x_robots_tag": [
+        "noindex, nofollow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h03/child/",
+      "case_id": "H03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h03/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h04/",
+      "case_id": "H04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h04/",
+      "actual_x_robots_tag": [
+        "NOINDEX, NOFOLLOW"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h04/child/",
+      "case_id": "H04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h04/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h05/",
+      "case_id": "H05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h05/",
+      "actual_x_robots_tag": [
+        "noindex nofollow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h05/child/",
+      "case_id": "H05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h05/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h06/",
+      "case_id": "H06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h06/",
+      "actual_x_robots_tag": [
+        "noindex"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h06/child/",
+      "case_id": "H06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h06/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h07/",
+      "case_id": "H07",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h07/",
+      "actual_x_robots_tag": [
+        "noindex",
+        "nofollow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h07/child/",
+      "case_id": "H07",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h07/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h08/",
+      "case_id": "H08",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h08/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h08/allowed.txt",
+      "case_id": "H08",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h08/allowed.txt",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h08/restricted.txt",
+      "case_id": "H08",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h08/restricted.txt",
+      "actual_x_robots_tag": [
+        "noindex"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h09/",
+      "case_id": "H09",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h09/",
+      "actual_x_robots_tag": [
+        "noindex"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h09/child/",
+      "case_id": "H09",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h09/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h10/",
+      "case_id": "H10",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h10/",
+      "actual_x_robots_tag": [
+        "noindex,nofollow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h10/child/",
+      "case_id": "H10",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h10/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h11/",
+      "case_id": "H11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h11/",
+      "actual_x_robots_tag": [
+        "index,follow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h11/child/",
+      "case_id": "H11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h11/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h12/",
+      "case_id": "H12",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h12/",
+      "actual_x_robots_tag": [
+        "googlebot: noindex,nofollow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h12/child/",
+      "case_id": "H12",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h12/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h13/",
+      "case_id": "H13",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h13/",
+      "actual_x_robots_tag": [
+        "searchstax: noindex,nofollow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h13/child/",
+      "case_id": "H13",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h13/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h14/",
+      "case_id": "H14",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h14/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/h14/child/",
+      "case_id": "H14",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/h14/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l01/",
+      "case_id": "L01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l01/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l01/restricted/",
+      "case_id": "L01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l01/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l01/allowed/",
+      "case_id": "L01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l01/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l02/",
+      "case_id": "L02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l02/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l02/restricted/",
+      "case_id": "L02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l02/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l02/allowed/",
+      "case_id": "L02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l02/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l03/",
+      "case_id": "L03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l03/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l03/restricted/",
+      "case_id": "L03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l03/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l03/allowed/",
+      "case_id": "L03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l03/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l04/",
+      "case_id": "L04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l04/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l04/restricted/",
+      "case_id": "L04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l04/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l04/allowed/",
+      "case_id": "L04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l04/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l05/",
+      "case_id": "L05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l05/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l05/restricted/",
+      "case_id": "L05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l05/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l05/allowed/",
+      "case_id": "L05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l05/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l06/",
+      "case_id": "L06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l06/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l06/restricted/",
+      "case_id": "L06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l06/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l06/allowed/",
+      "case_id": "L06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l06/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l07/",
+      "case_id": "L07",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l07/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l07/restricted/",
+      "case_id": "L07",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l07/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l07/allowed/",
+      "case_id": "L07",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l07/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l08/",
+      "case_id": "L08",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l08/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l08/shared/",
+      "case_id": "L08",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l08/shared/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l09/",
+      "case_id": "L09",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l09/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l09/shared/",
+      "case_id": "L09",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l09/shared/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l10/",
+      "case_id": "L10",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l10/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l10/shared/",
+      "case_id": "L10",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l10/shared/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l10/bridge/",
+      "case_id": "L10",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l10/bridge/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l11/",
+      "case_id": "L11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l11/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l11/blocked-source/",
+      "case_id": "L11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l11/blocked-source/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l11/allowed-source/",
+      "case_id": "L11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l11/allowed-source/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l11/shared/",
+      "case_id": "L11",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l11/shared/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l12/",
+      "case_id": "L12",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l12/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l12/restricted/",
+      "case_id": "L12",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l12/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l12/allowed/",
+      "case_id": "L12",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l12/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l13/",
+      "case_id": "L13",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l13/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l13/restricted/",
+      "case_id": "L13",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l13/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l13/allowed/",
+      "case_id": "L13",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l13/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l14/",
+      "case_id": "L14",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l14/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l14/shared/",
+      "case_id": "L14",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l14/shared/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l15/",
+      "case_id": "L15",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l15/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l15/restricted/",
+      "case_id": "L15",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l15/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/l15/allowed/",
+      "case_id": "L15",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/l15/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r01/blocked/",
+      "case_id": "R01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r01/blocked/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r01/",
+      "case_id": "R01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r01/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r01/child/",
+      "case_id": "R01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r01/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r02/blocked/",
+      "case_id": "R02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r02/blocked/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r02/",
+      "case_id": "R02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r02/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r02/child/",
+      "case_id": "R02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r02/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r03/blocked/",
+      "case_id": "R03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r03/blocked/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r03/",
+      "case_id": "R03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r03/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r03/child/",
+      "case_id": "R03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r03/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r04/blocked/",
+      "case_id": "R04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r04/blocked/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r04/",
+      "case_id": "R04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r04/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r04/child/",
+      "case_id": "R04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r04/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r05/blocked/",
+      "case_id": "R05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r05/blocked/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r05/",
+      "case_id": "R05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r05/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r05/restricted/",
+      "case_id": "R05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r05/restricted/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r05/allowed/",
+      "case_id": "R05",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r05/allowed/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r06/blocked/",
+      "case_id": "R06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r06/blocked/",
+      "actual_x_robots_tag": [
+        "noindex,nofollow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r06/",
+      "case_id": "R06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r06/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/r06/child/",
+      "case_id": "R06",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/r06/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/u01/",
+      "case_id": "U01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/u01/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/u01/child/",
+      "case_id": "U01",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/u01/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/u02/",
+      "case_id": "U02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/u02/",
+      "actual_x_robots_tag": [
+        "index,follow"
+      ],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/u02/child/",
+      "case_id": "U02",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/u02/child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/u03/",
+      "case_id": "U03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/u03/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/u03/old-child/",
+      "case_id": "U03",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/u03/old-child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/u04/",
+      "case_id": "U04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/u04/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/cases/u04/old-child/",
+      "case_id": "U04",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/cases/u04/old-child/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/suites/core/",
+      "case_id": "",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/suites/core/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/suites/meta/",
+      "case_id": "",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/suites/meta/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/suites/links/",
+      "case_id": "",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/suites/links/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/suites/headers/",
+      "case_id": "",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/suites/headers/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/suites/robots/",
+      "case_id": "",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/suites/robots/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/suites/bots/",
+      "case_id": "",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/suites/bots/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "/suites/decisions/",
+      "case_id": "",
+      "failures": [],
+      "status": 200,
+      "final_url": "http://127.0.0.1:8765/suites/decisions/",
+      "actual_x_robots_tag": [],
+      "result": "Fixture verified"
+    },
+    {
+      "path": "http://127.0.0.1:8765/robots.txt",
+      "kind": "Host-root robots configuration",
+      "failures": []
+    }
+  ],
+  "crawler_execution": "Not run",
+  "warnings": [],
+  "summary": {
+    "fixture_checks": 173,
+    "failures": 0,
+    "crawler_cases_executed": 0
+  }
+}

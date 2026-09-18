@@ -1,0 +1,620 @@
+{
+  "scope": "Author-time reference-model consistency of fixture graph and expected values only. This is NOT a crawler execution or acceptance result.",
+  "models_checked": 102,
+  "mismatches": 0,
+  "crawler_cases_executed": 0,
+  "checks": [
+    {
+      "case": "M01",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M01",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M02",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M02",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M03",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M03",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M04",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M04",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M05",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M05",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M06",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M06",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M07",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M07",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M08",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M08",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M09",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M09",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M10",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M10",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M11",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M11",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M12",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M12",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M13",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M13",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M14",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M14",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M15",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M15",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M16",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M16",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M17",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M17",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M18",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M18",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M19",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "M19",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "B01",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "B01",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "B02",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "B02",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "B03",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "B03",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "B04",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "B04",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H01",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H01",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H02",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H02",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H03",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H03",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H04",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H04",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H05",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H05",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H06",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H06",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H14",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "H14",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L01",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L01",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L02",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L02",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L03",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L03",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L04",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L04",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L05",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L05",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L06",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L06",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L07",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L07",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L08",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L08",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L09",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L09",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L10",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L10",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L11",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L11",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L12",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L12",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L13",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L13",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L14",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L14",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L15",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "L15",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R01",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R01",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R02",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R02",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R03",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R03",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R04",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R04",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R05",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R05",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R06",
+      "ignore_robots_txt": false,
+      "authored_graph_consistent": true,
+      "errors": []
+    },
+    {
+      "case": "R06",
+      "ignore_robots_txt": true,
+      "authored_graph_consistent": true,
+      "errors": []
+    }
+  ]
+}

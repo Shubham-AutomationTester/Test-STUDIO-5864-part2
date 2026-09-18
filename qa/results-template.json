@@ -1,0 +1,444 @@
+{
+  "ticket": "STUDIO-5864",
+  "run_id": "",
+  "environment": "",
+  "app_id": "",
+  "crawl_definition_id": "",
+  "crawl_run_id": "",
+  "ignore_robots_txt": false,
+  "phase": "baseline",
+  "records": [
+    {
+      "case_id": "M01",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M02",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M03",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M04",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M05",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M06",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M07",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M08",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M09",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M10",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M11",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M12",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M13",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M14",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M15",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M16",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M17",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M18",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M19",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M20",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M21",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "M22",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B01",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B02",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B03",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B04",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B05",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B06",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B07",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B08",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B09",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B10",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "B11",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H01",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H02",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H03",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H04",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H05",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H06",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H07",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H08",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H09",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H10",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H11",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H12",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H13",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "H14",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L01",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L02",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L03",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L04",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L05",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L06",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L07",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L08",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L09",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L10",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L11",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L12",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L13",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L14",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "L15",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "R01",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "R02",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "R03",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "R04",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "R05",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "R06",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "U01",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "U02",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "U03",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    },
+    {
+      "case_id": "U04",
+      "result": "Not run",
+      "actual": "",
+      "evidence": ""
+    }
+  ]
+}

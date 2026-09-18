@@ -1,0 +1,47 @@
+{
+  "scope": "Generated phase and prefix fixtures only, not product lifecycle execution",
+  "checks": [
+    {
+      "phase": "baseline",
+      "checks": {
+        "fixture_checks": 9,
+        "failures": 0,
+        "crawler_cases_executed": 0
+      },
+      "u02_header": "index,follow",
+      "u03_new_child_exists": false
+    },
+    {
+      "phase": "restricted",
+      "checks": {
+        "fixture_checks": 11,
+        "failures": 0,
+        "crawler_cases_executed": 0
+      },
+      "u02_header": "noindex",
+      "u03_new_child_exists": true
+    },
+    {
+      "phase": "restored",
+      "checks": {
+        "fixture_checks": 11,
+        "failures": 0,
+        "crawler_cases_executed": 0
+      },
+      "u02_header": "index,follow",
+      "u03_new_child_exists": true
+    },
+    {
+      "profile": "Project-prefix server fixture check",
+      "base_path": "/demo-repo",
+      "checks": {
+        "fixture_checks": 173,
+        "failures": 0,
+        "crawler_cases_executed": 0
+      }
+    }
+  ],
+  "delivered_phase": "baseline",
+  "delivered_base_path": "",
+  "crawler_cases_executed": 0
+}

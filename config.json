@@ -1,0 +1,8 @@
+{
+  "ticket": "STUDIO-5864",
+  "bot_meta_name": "searchstax",
+  "bot_mapping_confirmed": false,
+  "crawler_http_user_agent": "UNCONFIRMED - capture the actual crawler request",
+  "base_path": "",
+  "phase": "baseline"
+}

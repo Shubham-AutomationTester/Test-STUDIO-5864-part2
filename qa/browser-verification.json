@@ -1,0 +1,24 @@
+{
+  "scope": "Offline browser rendering and UI-handler checks; actual local HTTP validated separately",
+  "browser_navigation": "Managed browser forbids URL navigation. No policy changed; generated DOM injected with set_content. Fetch supplied through a local fixture binding.",
+  "storage_scope": "Storage adapter supplied for component checks; native cross-reload browser storage and real downloads were not exercised.",
+  "desktop": "1440x1080",
+  "mobile": "390x844",
+  "cases_loaded": 72,
+  "errors": [],
+  "checks": [
+    "Dashboard render",
+    "Suite controls rendered",
+    "Case search/pagination",
+    "Details dialog",
+    "HTTP-check UI handling",
+    "Evidence save handler",
+    "robots toggle expectations",
+    "Decision panels",
+    "Guide",
+    "Static parent meta/anchor",
+    "Mobile no document overflow"
+  ],
+  "synthetic_result_records": "Removed before final screenshots; not present in any shipped actual-results artifact.",
+  "crawler_cases_executed": 0
+}
