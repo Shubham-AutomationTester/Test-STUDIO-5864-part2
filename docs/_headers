@@ -1,0 +1,97 @@
+# Deploy docs/ as the publish directory. These are real host HTTP rules.
+# Physical duplicate header fields may be combined by the CDN.
+/*
+  Cache-Control: no-store, max-age=0
+
+/cases/h01/
+  X-Robots-Tag: noindex
+
+/cases/h01/index.html
+  X-Robots-Tag: noindex
+
+/cases/h02/
+  X-Robots-Tag: nofollow
+
+/cases/h02/index.html
+  X-Robots-Tag: nofollow
+
+/cases/h03/
+  X-Robots-Tag: noindex, nofollow
+
+/cases/h03/index.html
+  X-Robots-Tag: noindex, nofollow
+
+/cases/h04/
+  X-Robots-Tag: NOINDEX, NOFOLLOW
+
+/cases/h04/index.html
+  X-Robots-Tag: NOINDEX, NOFOLLOW
+
+/cases/h05/
+  X-Robots-Tag: noindex nofollow
+
+/cases/h05/index.html
+  X-Robots-Tag: noindex nofollow
+
+/cases/h06/
+  x-RoBoTs-TaG: noindex
+
+/cases/h06/index.html
+  x-RoBoTs-TaG: noindex
+
+/cases/h07/
+  X-Robots-Tag: noindex, nofollow
+
+/cases/h07/index.html
+  X-Robots-Tag: noindex, nofollow
+
+/cases/h08/restricted.txt
+  X-Robots-Tag: noindex
+
+/cases/h09/
+  X-Robots-Tag: noindex
+
+/cases/h09/index.html
+  X-Robots-Tag: noindex
+
+/cases/h10/
+  X-Robots-Tag: noindex,nofollow
+
+/cases/h10/index.html
+  X-Robots-Tag: noindex,nofollow
+
+/cases/h11/
+  X-Robots-Tag: index,follow
+
+/cases/h11/index.html
+  X-Robots-Tag: index,follow
+
+/cases/h12/
+  X-Robots-Tag: googlebot: noindex,nofollow
+
+/cases/h12/index.html
+  X-Robots-Tag: googlebot: noindex,nofollow
+
+/cases/h13/
+  X-Robots-Tag: searchstax: noindex,nofollow
+
+/cases/h13/index.html
+  X-Robots-Tag: searchstax: noindex,nofollow
+
+/cases/h14/
+  X-Robots-Tags: noindex,nofollow
+
+/cases/h14/index.html
+  X-Robots-Tags: noindex,nofollow
+
+/cases/r06/blocked/
+  X-Robots-Tag: noindex,nofollow
+
+/cases/r06/blocked/index.html
+  X-Robots-Tag: noindex,nofollow
+
+/cases/u02/
+  X-Robots-Tag: index,follow
+
+/cases/u02/index.html
+  X-Robots-Tag: index,follow

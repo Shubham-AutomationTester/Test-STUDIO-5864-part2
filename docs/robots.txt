@@ -1,0 +1,10 @@
+# STUDIO-5864 QA fixtures. Serve this file at the HOST ROOT /robots.txt.
+# A /repository/robots.txt file on a project site does not control the host.
+# No Sitemap declaration: target isolation is intentional.
+User-agent: *
+Disallow: /cases/r01/blocked/
+Disallow: /cases/r02/blocked/
+Disallow: /cases/r03/blocked/
+Disallow: /cases/r04/blocked/
+Disallow: /cases/r05/blocked/
+Disallow: /cases/r06/blocked/

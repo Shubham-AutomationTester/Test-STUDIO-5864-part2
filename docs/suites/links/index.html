@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Link rules | STUDIO-5864 QA</title>
+
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body class="fixture-body">
+<header class="fixture-brand"><span class="brand-mark">S/</span><span>SEARCHSTAX <b>QA LAB</b></span><span class="ticket-label">STUDIO-5864</span></header>
+<main class="fixture-main"><div class="eyebrow">CRAWL SEED SUITE</div><h1>Link rules</h1><p class="lead">Occurrence-level suppression and alternate-path controls.</p><p>Only case-entry URLs are listed. Targets are deliberately not exposed here. Include both /suites/ and /cases/ in the crawler scope, not this seed directory alone.</p><section class="panel suite-links"><a class="suite-link" href="../../cases/l01/"><b>L01</b> One nofollow link and one normal link</a>
+<a class="suite-link" href="../../cases/l02/"><b>L02</b> Uppercase rel=NOFOLLOW</a>
+<a class="suite-link" href="../../cases/l03/"><b>L03</b> Multiple rel tokens: external nofollow</a>
+<a class="suite-link" href="../../cases/l04/"><b>L04</b> Mixed case, tabs and newlines in rel</a>
+<a class="suite-link" href="../../cases/l05/"><b>L05</b> nofollowish is not a nofollow token</a>
+<a class="suite-link" href="../../cases/l06/"><b>L06</b> Unrelated rel values stay followable</a>
+<a class="suite-link" href="../../cases/l07/"><b>L07</b> Empty rel and missing rel</a>
+<a class="suite-link" href="../../cases/l08/"><b>L08</b> Same URL: nofollow occurrence comes first</a>
+<a class="suite-link" href="../../cases/l09/"><b>L09</b> Same URL: permitted occurrence comes first</a>
+<a class="suite-link" href="../../cases/l10/"><b>L10</b> Alternate permitted path reaches the same target</a>
+<a class="suite-link" href="../../cases/l11/"><b>L11</b> Page nofollow is not a global URL blacklist</a>
+<a class="suite-link" href="../../cases/l12/"><b>L12</b> noindex parent with mixed link-level rules</a>
+<a class="suite-link" href="../../cases/l13/"><b>L13</b> Page nofollow overrides an unrestricted link</a>
+<a class="suite-link" href="../../cases/l14/"><b>L14</b> Multiple fragment occurrences are all nofollow</a>
+<a class="suite-link" href="../../cases/l15/"><b>L15</b> Comma is not a rel-token separator</a></section></main>
+<footer class="fixture-footer">Isolated crawl fixture. No navigation, sitemap, canonical or alternate discovery links are added.</footer>
+</body></html>
