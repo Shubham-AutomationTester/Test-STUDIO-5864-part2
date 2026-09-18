@@ -1,0 +1,5 @@
+STUDIO-5864 text fixture
+Case: H08
+Role: restricted
+Unique marker: QA5864H08RESTRICTED
+This is a plain-text extraction control. Header-only indexing restrictions apply independently of document format.
