@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Specific precedence is independent of tag order | STUDIO-5864 QA</title>
+<meta name="searchstax" content="index,follow">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body class="fixture-body">
+<header class="fixture-brand"><span class="brand-mark">S/</span><span>SEARCHSTAX <b>QA LAB</b></span><span class="ticket-label">STUDIO-5864</span></header>
+<main class="fixture-main"><div class="eyebrow">Bot targeting / B08</div>
+<h1>Specific precedence is independent of tag order</h1>
+<p class="lead">A deterministic fixture for the page-level robots behavior in STUDIO-5864.</p>
+<div class="fixture-chips"><span class="chip">Conditional</span><span class="chip">Parent page</span></div>
+<section class="token-card"><span class="eyebrow">Unique content marker</span><strong>QA5864B08P</strong><p>This marker exists in this fixture only. Query it in the index and inspect the document URL.</p></section>
+<div class="fixture-grid"><section class="panel"><h2>HTML head fixture</h2><pre><code>&lt;meta name=&quot;searchstax&quot; content=&quot;index,follow&quot;&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;</code></pre></section>
+<section class="panel"><h2>Required HTTP response</h2><pre><code>(No custom robots response header for this page)</code></pre><p class="muted">Header text shown here is documentation, not a response header. Verify the real GET response.</p></section></div>
+<section class="panel"><h2>Expected behavior</h2><p>Index this parent: <strong>Yes</strong>. Follow page links before link-level filtering: <strong>Yes</strong>.</p>
+<p></p>
+<p class="warning-text">This is not an unconditional pass/fail case. Resolve its prerequisites or product decision first.</p></section>
+<section class="panel"><h2>Actual crawl graph links</h2><p class="muted">Only the anchors below create discovery paths for this fixture.</p><div class="test-links"><a class="test-link" href="child/">Occurrence 1: child <span aria-hidden="true">&rarr;</span></a></div></section>
+
+</main>
+<footer class="fixture-footer">Isolated crawl fixture. No navigation, sitemap, canonical or alternate discovery links are added.</footer>
+</body></html>
